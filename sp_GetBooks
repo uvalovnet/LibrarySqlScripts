@@ -1,0 +1,10 @@
+CREATE PROCEDURE sp_GetBooks
+    @BookId INT = NULL
+AS
+BEGIN
+    IF @BookId IS NULL
+        SELECT * FROM Books ORDER BY Title;
+    ELSE
+        SELECT * FROM Books WHERE BookId = @BookId;
+END
+GO
