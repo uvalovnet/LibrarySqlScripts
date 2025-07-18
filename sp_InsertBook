@@ -1,0 +1,16 @@
+CREATE PROCEDURE sp_InsertBook
+    @Title NVARCHAR(100),
+    @Author NVARCHAR(100),
+    @PublishedYear INT,
+    @ISBN NVARCHAR(20),
+    @Genre NVARCHAR(50),
+    @Pages INT,
+    @TableOfContents XML
+AS
+BEGIN
+    INSERT INTO Books (Title, Author, PublishedYear, ISBN, Genre, Pages, TableOfContents)
+    VALUES (@Title, @Author, @PublishedYear, @ISBN, @Genre, @Pages, @TableOfContents);
+    
+    SELECT SCOPE_IDENTITY() AS BookId;
+END
+GO
