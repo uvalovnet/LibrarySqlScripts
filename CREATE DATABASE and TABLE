@@ -1,0 +1,19 @@
+CREATE DATABASE HomeLibrary;
+GO
+
+USE HomeLibrary;
+GO
+
+CREATE TABLE Books (
+    BookId INT PRIMARY KEY IDENTITY(1,1),
+    Title NVARCHAR(100) NOT NULL,
+    Author NVARCHAR(100) NOT NULL,
+    PublishedYear INT,
+    ISBN NVARCHAR(20),
+    Genre NVARCHAR(50),
+    Pages INT,
+    TableOfContents XML,
+    CreatedDate DATETIME DEFAULT GETDATE(),
+    ModifiedDate DATETIME DEFAULT GETDATE()
+);
+GO
