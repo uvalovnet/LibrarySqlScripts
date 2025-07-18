@@ -1,0 +1,14 @@
+CREATE PROCEDURE sp_GetChaptersFromTOC
+    @BookId INT
+AS
+BEGIN
+    SELECT 
+        BookId,
+        Title,
+        c.value('@title', 'NVARCHAR(100)') AS ChapterTitle,
+        c.value('@page', 'INT') AS ChapterPage
+    FROM Books
+    CROSS APPLY TableOfContents.nodes('/tableofcontents/chapter') AS t(c)
+    WHERE BookId = @BookId;
+END
+GO
