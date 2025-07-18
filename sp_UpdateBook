@@ -1,0 +1,24 @@
+CREATE PROCEDURE sp_UpdateBook
+    @BookId INT,
+    @Title NVARCHAR(100),
+    @Author NVARCHAR(100),
+    @PublishedYear INT,
+    @ISBN NVARCHAR(20),
+    @Genre NVARCHAR(50),
+    @Pages INT,
+    @TableOfContents XML
+AS
+BEGIN
+    UPDATE Books
+    SET 
+        Title = @Title,
+        Author = @Author,
+        PublishedYear = @PublishedYear,
+        ISBN = @ISBN,
+        Genre = @Genre,
+        Pages = @Pages,
+        TableOfContents = @TableOfContents,
+        ModifiedDate = GETDATE()
+    WHERE BookId = @BookId;
+END
+GO
