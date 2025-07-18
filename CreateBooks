@@ -1,0 +1,119 @@
+USE HomeLibrary;
+GO
+
+INSERT INTO Books (Title, Author, PublishedYear, ISBN, Genre, Pages, TableOfContents)
+VALUES 
+('Война и мир', 'Лев Толстой', 1869, '978-5-389-06256-6', 'Роман-эпопея', 1225,
+'<tableofcontents>
+    <chapter title="Том 1. Часть 1" page="1" />
+    <chapter title="Том 1. Часть 2" page="85" />
+    <chapter title="Том 1. Часть 3" page="167" />
+    <chapter title="Том 2. Часть 1" page="253" />
+    <chapter title="Том 2. Часть 2" page="341" />
+    <chapter title="Том 3. Часть 1" page="429" />
+    <chapter title="Том 3. Часть 2" page="517" />
+    <chapter title="Том 3. Часть 3" page="605" />
+    <chapter title="Том 4. Часть 1" page="693" />
+    <chapter title="Том 4. Часть 2" page="781" />
+    <chapter title="Том 4. Часть 3" page="869" />
+    <chapter title="Том 4. Часть 4" page="957" />
+    <chapter title="Эпилог. Часть 1" page="1045" />
+    <chapter title="Эпилог. Часть 2" page="1133" />
+</tableofcontents>'),
+
+('Преступление и наказание', 'Фёдор Достоевский', 1866, '978-5-17-090765-3', 'Роман', 608,
+'<tableofcontents>
+    <chapter title="Часть 1" page="1" />
+    <chapter title="Часть 2" page="85" />
+    <chapter title="Часть 3" page="169" />
+    <chapter title="Часть 4" page="253" />
+    <chapter title="Часть 5" page="337" />
+    <chapter title="Часть 6" page="421" />
+    <chapter title="Эпилог" page="505" />
+</tableofcontents>'),
+
+('Мастер и Маргарита', 'Михаил Булгаков', 1967, '978-5-17-067842-3', 'Роман', 480,
+'<tableofcontents>
+    <chapter title="Часть 1. Глава 1" page="1" />
+    <chapter title="Часть 1. Глава 2" page="25" />
+    <chapter title="Часть 1. Глава 3" page="49" />
+    <chapter title="Часть 1. Глава 4" page="73" />
+    <chapter title="Часть 1. Глава 5" page="97" />
+    <chapter title="Часть 1. Глава 6" page="121" />
+    <chapter title="Часть 1. Глава 7" page="145" />
+    <chapter title="Часть 1. Глава 8" page="169" />
+    <chapter title="Часть 1. Глава 9" page="193" />
+    <chapter title="Часть 1. Глава 10" page="217" />
+    <chapter title="Часть 1. Глава 11" page="241" />
+    <chapter title="Часть 1. Глава 12" page="265" />
+    <chapter title="Часть 1. Глава 13" page="289" />
+    <chapter title="Часть 1. Глава 14" page="313" />
+    <chapter title="Часть 1. Глава 15" page="337" />
+    <chapter title="Часть 1. Глава 16" page="361" />
+    <chapter title="Часть 1. Глава 17" page="385" />
+    <chapter title="Часть 1. Глава 18" page="409" />
+    <chapter title="Часть 2. Глава 19" page="433" />
+    <chapter title="Часть 2. Глава 20" page="457" />
+    <chapter title="Часть 2. Глава 21" page="481" />
+    <chapter title="Часть 2. Глава 22" page="505" />
+    <chapter title="Часть 2. Глава 23" page="529" />
+    <chapter title="Часть 2. Глава 24" page="553" />
+    <chapter title="Часть 2. Глава 25" page="577" />
+    <chapter title="Часть 2. Глава 26" page="601" />
+    <chapter title="Часть 2. Глава 27" page="625" />
+    <chapter title="Часть 2. Глава 28" page="649" />
+    <chapter title="Часть 2. Глава 29" page="673" />
+    <chapter title="Часть 2. Глава 30" page="697" />
+    <chapter title="Часть 2. Глава 31" page="721" />
+    <chapter title="Часть 2. Глава 32" page="745" />
+</tableofcontents>'),
+
+('1984', 'Джордж Оруэлл', 1949, '978-5-17-103901-2', 'Антиутопия', 320,
+'<tableofcontents>
+    <chapter title="Часть 1. Глава 1" page="1" />
+    <chapter title="Часть 1. Глава 2" page="25" />
+    <chapter title="Часть 1. Глава 3" page="49" />
+    <chapter title="Часть 1. Глава 4" page="73" />
+    <chapter title="Часть 1. Глава 5" page="97" />
+    <chapter title="Часть 1. Глава 6" page="121" />
+    <chapter title="Часть 1. Глава 7" page="145" />
+    <chapter title="Часть 1. Глава 8" page="169" />
+    <chapter title="Часть 2. Глава 1" page="193" />
+    <chapter title="Часть 2. Глава 2" page="217" />
+    <chapter title="Часть 2. Глава 3" page="241" />
+    <chapter title="Часть 2. Глава 4" page="265" />
+    <chapter title="Часть 2. Глава 5" page="289" />
+    <chapter title="Часть 2. Глава 6" page="313" />
+    <chapter title="Часть 2. Глава 7" page="337" />
+    <chapter title="Часть 2. Глава 8" page="361" />
+    <chapter title="Часть 2. Глава 9" page="385" />
+    <chapter title="Часть 2. Глава 10" page="409" />
+    <chapter title="Часть 3. Глава 1" page="433" />
+    <chapter title="Часть 3. Глава 2" page="457" />
+    <chapter title="Часть 3. Глава 3" page="481" />
+    <chapter title="Часть 3. Глава 4" page="505" />
+    <chapter title="Часть 3. Глава 5" page="529" />
+    <chapter title="Часть 3. Глава 6" page="553" />
+    <chapter title="Приложение" page="577" />
+</tableofcontents>'),
+
+('Гарри Поттер и философский камень', 'Дж. К. Роулинг', 1997, '978-5-389-07435-4', 'Фэнтези', 432,
+'<tableofcontents>
+    <chapter title="Глава 1. Мальчик, который выжил" page="1" />
+    <chapter title="Глава 2. Исчезнувшее стекло" page="25" />
+    <chapter title="Глава 3. Письма неведомого" page="49" />
+    <chapter title="Глава 4. Хранитель ключей" page="73" />
+    <chapter title="Глава 5. Косой переулок" page="97" />
+    <chapter title="Глава 6. Отправление с платформы девять и три четверти" page="121" />
+    <chapter title="Глава 7. Распределяющая шляпа" page="145" />
+    <chapter title="Глава 8. Учитель зельеварения" page="169" />
+    <chapter title="Глава 9. Дуэль в полночь" page="193" />
+    <chapter title="Глава 10. Хеллоуин" page="217" />
+    <chapter title="Глава 11. Квиддич" page="241" />
+    <chapter title="Глава 12. Зеркало Еиналеж" page="265" />
+    <chapter title="Глава 13. Николас Фламель" page="289" />
+    <chapter title="Глава 14. Норберт - норвежский хребет" page="313" />
+    <chapter title="Глава 15. Запретный лес" page="337" />
+    <chapter title="Глава 16. Сквозь люк" page="361" />
+    <chapter title="Глава 17. Человек с двумя лицами" page="385" />
+</tableofcontents>');
